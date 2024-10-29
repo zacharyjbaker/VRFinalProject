@@ -2303,3 +2303,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:scripting/precompiled-assembly-types:Assembly-CSharp: 30cd12005e184b85c49b0d9f37664add -> c5a15ea2e4841522b0d2666c2af868b6
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:scripting/monoscript/fileName/PlayerShoot.cs: 2109d9792a12c91d743c83f0316d3b8c -> cb19fbe30492adfa521da80ba71f6503
+========================================================================
+Received Import Request.
+  Time since last request: 2003.659482 seconds.
+  path: Assets/Scripts/SpellBook.cs
+  artifactKey: Guid(c271c237bdaaa493e87ab319148b1415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellBook.cs using Guid(c271c237bdaaa493e87ab319148b1415) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8965499a1b291a2a4cdaaa3a8293407d') in 0.006574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
