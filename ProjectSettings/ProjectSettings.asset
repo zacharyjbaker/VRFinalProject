@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: daed3c297253145699fc8cef225613c9
+  productGUID: db23ee47043004db9aece946281faadb
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: InteractionResearch
+  productName: VRTestProj
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
@@ -49,7 +49,7 @@ PlayerSettings:
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
-  m_ActiveColorSpace: 0
+  m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
   m_SpriteBatchVertexThreshold: 300
   m_MTRendering: 1
@@ -162,7 +162,9 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.VRTestProj
+    Standalone: com.DefaultCompany.VRTestProj
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -751,14 +753,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: InteractionResearch
+  metroPackageName: VRTestProj
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: InteractionResearch
+  metroApplicationDescription: VRTestProj
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -828,10 +830,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 412d8f5f-bddd-4c3b-8251-709d55969a60
+  cloudProjectId: e700b15c-b4bb-4f66-989f-062d690263ab
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: InteractionResearch
+  projectName: VRTestProj
   organizationId: team-ebon
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
