@@ -7,7 +7,7 @@ ScriptsOnlyBuild:
     - Magic
     - Player
     - PlayerShoot
-    - RaycastToTarget
+    - SpellBook
     - Target
     - TimeModulate
     - Waypoint
@@ -28,6 +28,9 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     Unity.XR.CoreUtils.dll:
     - Unity.XR.CoreUtils.XROrigin
@@ -478,10 +481,10 @@ ScriptsOnlyBuild:
     className: OculusSettings
   - hash:
       serializedVersion: 2
-      Hash: 74142573c740436d266250a14ae24f28
+      Hash: 50325189ded9933d12592ef638acd44d
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: RaycastToTarget
+    className: SpellBook
   - hash:
       serializedVersion: 2
       Hash: d19bc70837003de5d3cb030aae206328
@@ -988,7 +991,7 @@ ScriptsOnlyBuild:
     className: MetaQuestTouchProControllerProfile
   - hash:
       serializedVersion: 2
-      Hash: 581fe69dbf30d617cbfed76de9cd7aaf
+      Hash: 6a72d3362d73f54a9d9cd83b51d8bf83
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerShoot

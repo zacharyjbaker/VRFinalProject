@@ -64,17 +64,17 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.44f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/SpellBook.cs" />
+    <Compile Include="Assets/Scripts/Waypoint.cs" />
     <Compile Include="Assets/Scripts/PlayerShoot.cs" />
-    <Compile Include="Assets/Scripts/RaycastToTarget.cs" />
     <Compile Include="Assets/Scripts/LogOnHit.cs" />
+    <Compile Include="Assets/Scripts/Magic.cs" />
     <Compile Include="Assets/Scripts/WaypointManager.cs" />
     <Compile Include="Assets/Scripts/DebugTMP.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/TimeModulate.cs" />
     <Compile Include="Assets/Scripts/Target.cs" />
-    <Compile Include="Assets/Waypoint.cs" />
-    <Compile Include="Assets/Magic.cs" />
     <Compile Include="Assets/Scripts/GameStart.cs" />
   </ItemGroup>
   <ItemGroup>

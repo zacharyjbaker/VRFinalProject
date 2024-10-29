@@ -1,24 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.WebSockets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
-public class RaycastToTarget : MonoBehaviour
+public class SpellBook : MonoBehaviour
 {
 
-    [SerializeField]
-    private GameObject player;
-    [SerializeField]
-    private LayerMask teleportMask;
-    [SerializeField]
-    private InputActionReference teleportButtonPress;
-    [SerializeField]
-    private InputActionReference restartButtonPress;
+    public static string GameMode = "";  
+
+    [SerializeField] private GameObject player;
+    [SerializeField] private LayerMask teleportMask;
+    [SerializeField] private InputActionReference teleportButtonPress;
+    [SerializeField] private InputActionReference restartButtonPress;
+    [SerializeField] private VideoClip[] spellVids;
+
+    [SerializeField] private VideoPlayer vidPlayer;
+
+    [SerializeField] private GameObject[] MagicWaypoints;
 
     void Start() {
-        teleportButtonPress.action.performed += DoRaycast;
+        teleportButtonPress.action.performed += ChangeSpell;
         restartButtonPress.action.performed += Restart;
+        GameMode = "Trace";
+        vidPlayer.clip = spellVids[0];  
     }
 
     void DoRaycast(InputAction.CallbackContext __) {
@@ -39,5 +46,20 @@ public class RaycastToTarget : MonoBehaviour
     void Restart(InputAction.CallbackContext __) {
         string currentSceneName = SceneManager.GetActiveScene().name;
 	    SceneManager.LoadScene(currentSceneName);
+    }
+
+    void ChangeSpell(InputAction.CallbackContext __) {
+        if (GameMode == "Trace") {
+            GameMode = "Swipe";
+            vidPlayer.clip = spellVids[1]; 
+            //MagicWaypoints[1].SetActive(true);
+            MagicWaypoints[0].SetActive(false);
+        }
+        else if (GameMode == "Swipe") { 
+            GameMode = "Trace";
+            vidPlayer.clip = spellVids[0];
+            //MagicWaypoints[1].SetActive(true);
+            MagicWaypoints[0].SetActive(true);
+        }
     }
 }
