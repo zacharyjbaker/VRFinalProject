@@ -392,6 +392,7 @@
 "Assets/Scripts/TimeModulate.cs"
 "Assets/Scripts/Waypoint.cs"
 "Assets/Scripts/WaypointManager.cs"
+"Assets/ShootTarget.cs"
 -langversion:9.0
 /deterministic
 /optimize+

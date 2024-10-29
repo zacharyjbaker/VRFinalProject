@@ -7,12 +7,17 @@ public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject MagicParticles1;
     [SerializeField] private GameObject MagicParticles2;
+    [SerializeField] private GameObject BulletTemplate;
     public GameObject origin;
+    public GameObject fireOrigin;
+
+    public float shootPower;
 
     public InputActionReference trigger;
 
     public AudioSource audioSource;
     public AudioClip magicSound;
+    public AudioClip fireSound;
     [SerializeField] public AudioClip[] audioClips;
 
     [SerializeField] private float distanceSum = 0f;
@@ -21,13 +26,9 @@ public class PlayerShoot : MonoBehaviour
     Vector3 newPoint;
     Vector3 previousPoint = new Vector3(0,0,0);
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
+        Debug.DrawRay(transform.position, transform.forward, Color.magenta);
         if (trigger.action.IsPressed()) {
             if (SpellBook.GameMode == "Trace")
             {
@@ -44,7 +45,7 @@ public class PlayerShoot : MonoBehaviour
                         distanceSum += Mathf.Abs(newPoint.y - previousPoint.y);
                     }
                     Debug.Log("Vert Distance: " + distanceSum);
-                    if (distanceSum > 3f) {
+                    if (distanceSum > 2.2f) {
                         distanceSum = 0;
                         audioSource.PlayOneShot(audioClips[segmentCount]);
                         segmentCount += 1;
@@ -58,16 +59,16 @@ public class PlayerShoot : MonoBehaviour
                         distanceSum += Mathf.Abs(newPoint.x - previousPoint.x);
                     }
                     Debug.Log("Hori Distance: " + distanceSum);
-                    if (distanceSum > 2.4f) {
+                    if (distanceSum > 2.2f) {
                         distanceSum = 0;
                         audioSource.PlayOneShot(audioClips[segmentCount]);
                         segmentCount += 1;
                     }
                 }
-                else if (segmentCount == 5) {
+                else if (segmentCount == 4) {
                     distanceSum += Mathf.Abs(newPoint.x - previousPoint.x) + Mathf.Abs(newPoint.y - previousPoint.y);
                     Debug.Log("Total Distance: " + distanceSum);
-                    if (distanceSum > 8f) {
+                    if (distanceSum > 6f) {
                         distanceSum = 0;
                         audioSource.PlayOneShot(audioClips[segmentCount]);
                         segmentCount += 1;
@@ -79,6 +80,10 @@ public class PlayerShoot : MonoBehaviour
                     audioSource.PlayOneShot(audioClips[5]);
                 }
                 previousPoint = newPoint;
+            }
+            else 
+            {
+                Shoot();
             }
         }
     }
@@ -109,5 +114,17 @@ public class PlayerShoot : MonoBehaviour
             }
         }
         return previousPos;
+    }
+
+    void Shoot() {
+        GameObject newBullet = Instantiate(BulletTemplate, fireOrigin.transform.position += fireOrigin.transform.forward * 1.5f , fireOrigin.transform.rotation);
+        newBullet.GetComponent<Rigidbody>().AddForce(fireOrigin.transform.forward * shootPower);
+        
+        if (!audioSource.isPlaying){
+            audioSource.PlayOneShot(fireSound);
+        }
+        //GameObject newBullet = Instantiate(BulletTemplate, transform.position += transform.forward * 2.5f, transform.rotation);
+        //newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootPower);
+        //audioSource.PlayOneShot(audioSource.clip);
     }
 }

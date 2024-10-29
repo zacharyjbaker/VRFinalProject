@@ -75,6 +75,7 @@
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/TimeModulate.cs" />
     <Compile Include="Assets/Scripts/Target.cs" />
+    <Compile Include="Assets/ShootTarget.cs" />
     <Compile Include="Assets/Scripts/GameStart.cs" />
   </ItemGroup>
   <ItemGroup>

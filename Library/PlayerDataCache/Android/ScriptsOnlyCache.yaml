@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Magic
     - Player
     - PlayerShoot
+    - ShootTarget
     - SpellBook
     - Target
     - TimeModulate
@@ -28,9 +29,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     Unity.XR.CoreUtils.dll:
     - Unity.XR.CoreUtils.XROrigin
@@ -328,6 +326,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 65238}
     - Class: 114
       Script: {instanceID: 74664}
+    - Class: 114
+      Script: {instanceID: 138864}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -991,7 +991,7 @@ ScriptsOnlyBuild:
     className: MetaQuestTouchProControllerProfile
   - hash:
       serializedVersion: 2
-      Hash: 6a72d3362d73f54a9d9cd83b51d8bf83
+      Hash: 8488b95770b77ce23411bb588dba9242
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerShoot
@@ -2009,6 +2009,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Waypoint
+  - hash:
+      serializedVersion: 2
+      Hash: 0317a4766c8fc8c840d901163602020c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ShootTarget
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity

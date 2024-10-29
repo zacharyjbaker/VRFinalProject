@@ -48,18 +48,35 @@ public class SpellBook : MonoBehaviour
 	    SceneManager.LoadScene(currentSceneName);
     }
 
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.8f);
+    }
+
     void ChangeSpell(InputAction.CallbackContext __) {
-        if (GameMode == "Trace") {
+        if (GameMode == "Trace") { //Switch from trace to swipe
             GameMode = "Swipe";
             vidPlayer.clip = spellVids[1]; 
-            //MagicWaypoints[1].SetActive(true);
+            MagicWaypoints[1].SetActive(false);
             MagicWaypoints[0].SetActive(false);
+            //StartCoroutine(wait());
         }
-        else if (GameMode == "Swipe") { 
-            GameMode = "Trace";
-            vidPlayer.clip = spellVids[0];
+        else if (GameMode == "Swipe") { //Switch from swipe to shoot
+            GameMode = "Shoot";
+            vidPlayer.clip = spellVids[2];
             //MagicWaypoints[1].SetActive(true);
+            MagicWaypoints[1].SetActive(true);
+            MagicWaypoints[0].SetActive(false);
+            //StartCoroutine(wait());
+        }
+        else if (GameMode == "Shoot") {//Switch from trace to swipe
+            GameMode = "Trace";
+            vidPlayer.clip = spellVids[0]; 
+            MagicWaypoints[1].SetActive(false);
             MagicWaypoints[0].SetActive(true);
+            string currentSceneName = SceneManager.GetActiveScene().name;
+	        SceneManager.LoadScene(currentSceneName);
+            
         }
     }
 }
