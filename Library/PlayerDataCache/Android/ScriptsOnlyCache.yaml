@@ -10,6 +10,8 @@ ScriptsOnlyBuild:
     - RaycastToTarget
     - Target
     - TimeModulate
+    - Waypoint
+    - WaypointManager
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -26,9 +28,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     Unity.XR.CoreUtils.dll:
     - Unity.XR.CoreUtils.XROrigin
@@ -322,6 +321,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 22478}
     - Class: 114
       Script: {instanceID: 22690}
+    - Class: 114
+      Script: {instanceID: 65238}
+    - Class: 114
+      Script: {instanceID: 74664}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1991,6 +1994,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard.KeyFunctions
     className: LayoutFunction
+  - hash:
+      serializedVersion: 2
+      Hash: 3f5b22ff0bcc11ca2b63023c180b7382
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WaypointManager
+  - hash:
+      serializedVersion: 2
+      Hash: f2cc7b5fbba522728bce09352e4eff29
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Waypoint
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity

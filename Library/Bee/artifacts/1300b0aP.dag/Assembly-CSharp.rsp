@@ -332,6 +332,8 @@
 "Assets/Scripts/RaycastToTarget.cs"
 "Assets/Scripts/Target.cs"
 "Assets/Scripts/TimeModulate.cs"
+"Assets/Scripts/WaypointManager.cs"
+"Assets/Waypoint.cs"
 -langversion:9.0
 /deterministic
 /optimize+
