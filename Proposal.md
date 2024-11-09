@@ -15,11 +15,11 @@ In this section please fill out a table or list of the features you plan to impl
 1. **Controller Motion Spellcasting**: Cast spells through the motion of your controller (tracing, drawing, aiming, etc.)
     1. **Estimated Challenge - 2.5:** I already have the basics of this system implemented, but there definitely will be challenges in making it work with the new gameplay.
 2. **Enemy Waves**: Waves of enemies will spawn and try to reach your tower
-    2. **Estimated Challenge - 3.5:** The basic concept with basic, grunt enemies is easy to implement, the challenge will come in the form of interesting enemy variety, for example: evil mages that you have to counterspell in time, or elite enemies that require specific spells/have elemental weaknesses.
+    1. **Estimated Challenge - 3.5:** The basic concept with basic, grunt enemies is easy to implement, the challenge will come in the form of interesting enemy variety, for example: evil mages that you have to counterspell in time, or elite enemies that require specific spells/have elemental weaknesses.
 3. **Tower Defense**: Conjure your own minions and arcane defenses with the mana gained from killing enemies.
-    3. **Estimated Challenge - 4:** The challenge here will be implementing the system allowing for the placement of defenses in a 3D space, and the complexity will scale a lot with the more variety of towers. This is more of a stretch goal, so I'm aiming for a limited scope with this feature.
+    1. **Estimated Challenge - 4:** The challenge here will be implementing the system allowing for the placement of defenses in a 3D space, and the complexity will scale a lot with the more variety of towers. This is more of a stretch goal, so I'm aiming for a limited scope with this feature.
 4. **Moving Between Towers**: Move between different towers of your fortress to have different perspectives of the battlefield
-    4. **Estimated Challenge - 1:** This will be done with teleportation, and I don't expect any difficulties here
+    1. **Estimated Challenge - 1:** This will be done with teleportation, and I don't expect any difficulties here
 
 ## Milestones
 
