@@ -387,6 +387,7 @@
 "Assets/Scripts/Magic.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerShoot.cs"
+"Assets/Scripts/Spawner.cs"
 "Assets/Scripts/SpellBook.cs"
 "Assets/Scripts/Target.cs"
 "Assets/Scripts/TimeModulate.cs"

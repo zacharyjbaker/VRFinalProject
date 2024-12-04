@@ -93,7 +93,6 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
@@ -190,15 +189,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18790}
+      Script: {instanceID: 18798}
     - Class: 114
-      Script: {instanceID: 18934}
+      Script: {instanceID: 18942}
     - Class: 114
-      Script: {instanceID: 20584}
+      Script: {instanceID: 20598}
     - Class: 114
-      Script: {instanceID: 21512}
+      Script: {instanceID: 21526}
     - Class: 114
-      Script: {instanceID: 22510}
+      Script: {instanceID: 22524}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -253,81 +252,81 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 490}
+      Script: {instanceID: 498}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16718}
     - Class: 114
-      Script: {instanceID: 16716}
+      Script: {instanceID: 16768}
     - Class: 114
-      Script: {instanceID: 16766}
+      Script: {instanceID: 16796}
     - Class: 114
-      Script: {instanceID: 16794}
+      Script: {instanceID: 17026}
     - Class: 114
-      Script: {instanceID: 17022}
+      Script: {instanceID: 17234}
     - Class: 114
-      Script: {instanceID: 17230}
+      Script: {instanceID: 17318}
     - Class: 114
-      Script: {instanceID: 17314}
+      Script: {instanceID: 17470}
     - Class: 114
-      Script: {instanceID: 17604}
+      Script: {instanceID: 17610}
     - Class: 114
-      Script: {instanceID: 17936}
+      Script: {instanceID: 17942}
     - Class: 114
-      Script: {instanceID: 17948}
+      Script: {instanceID: 17954}
     - Class: 114
-      Script: {instanceID: 18226}
+      Script: {instanceID: 18232}
     - Class: 114
-      Script: {instanceID: 18264}
+      Script: {instanceID: 18270}
     - Class: 114
-      Script: {instanceID: 18376}
+      Script: {instanceID: 18382}
     - Class: 114
-      Script: {instanceID: 18444}
+      Script: {instanceID: 18450}
     - Class: 114
-      Script: {instanceID: 18614}
+      Script: {instanceID: 18620}
     - Class: 114
-      Script: {instanceID: 18656}
+      Script: {instanceID: 18662}
     - Class: 114
-      Script: {instanceID: 18788}
+      Script: {instanceID: 18694}
     - Class: 114
-      Script: {instanceID: 18790}
+      Script: {instanceID: 18796}
     - Class: 114
-      Script: {instanceID: 18852}
+      Script: {instanceID: 18798}
     - Class: 114
-      Script: {instanceID: 18934}
+      Script: {instanceID: 18860}
     - Class: 114
-      Script: {instanceID: 19164}
+      Script: {instanceID: 18942}
     - Class: 114
-      Script: {instanceID: 19420}
+      Script: {instanceID: 19172}
     - Class: 114
-      Script: {instanceID: 20088}
+      Script: {instanceID: 19428}
     - Class: 114
-      Script: {instanceID: 20148}
+      Script: {instanceID: 20098}
     - Class: 114
-      Script: {instanceID: 20584}
+      Script: {instanceID: 20158}
     - Class: 114
-      Script: {instanceID: 21082}
+      Script: {instanceID: 20240}
     - Class: 114
-      Script: {instanceID: 21512}
+      Script: {instanceID: 20408}
     - Class: 114
-      Script: {instanceID: 21552}
+      Script: {instanceID: 20598}
     - Class: 114
-      Script: {instanceID: 21714}
+      Script: {instanceID: 21096}
     - Class: 114
-      Script: {instanceID: 21868}
+      Script: {instanceID: 21526}
     - Class: 114
-      Script: {instanceID: 22404}
+      Script: {instanceID: 21566}
     - Class: 114
-      Script: {instanceID: 22416}
+      Script: {instanceID: 21728}
     - Class: 114
-      Script: {instanceID: 22478}
+      Script: {instanceID: 21882}
     - Class: 114
-      Script: {instanceID: 22690}
+      Script: {instanceID: 22418}
     - Class: 114
-      Script: {instanceID: 65238}
+      Script: {instanceID: 22430}
     - Class: 114
-      Script: {instanceID: 74664}
+      Script: {instanceID: 22492}
     - Class: 114
-      Script: {instanceID: 138864}
+      Script: {instanceID: 22704}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -397,18 +396,6 @@ ScriptsOnlyBuild:
     className: TrackedPoseDriver
   - hash:
       serializedVersion: 2
-      Hash: 8dff8e9853297d341afa0c11f9091b59
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: LayoutElement
-  - hash:
-      serializedVersion: 2
-      Hash: 10c17b309bdca62b4d7fbaf113ed4ca0
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Toggle
-  - hash:
-      serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -425,12 +412,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: CanvasScaler
-  - hash:
-      serializedVersion: 2
-      Hash: b5007673bbbdb9d12597a1d8201370f5
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
@@ -503,6 +484,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 8dff8e9853297d341afa0c11f9091b59
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
   - hash:
       serializedVersion: 2
       Hash: bf483b52b402d6937dcece9790b9c483
@@ -635,6 +622,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 3f5b22ff0bcc11ca2b63023c180b7382
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WaypointManager
   - hash:
       serializedVersion: 2
       Hash: 335ee3b93587102a8cd7f77332bea58d
@@ -1009,6 +1002,12 @@ ScriptsOnlyBuild:
     className: ValueKeyFunction
   - hash:
       serializedVersion: 2
+      Hash: 0317a4766c8fc8c840d901163602020c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ShootTarget
+  - hash:
+      serializedVersion: 2
       Hash: f48da21dccbde338587f4f039d2649a2
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
@@ -1297,6 +1296,12 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
+      Hash: 10c17b309bdca62b4d7fbaf113ed4ca0
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
       Hash: 2c610099abef686610392b2cac4c7d05
     assemblyName: Unity.XR.Oculus
     namespaceName: Unity.XR.Oculus
@@ -1351,6 +1356,12 @@ ScriptsOnlyBuild:
     className: Vector2MaterialPropertyAffordanceReceiver
   - hash:
       serializedVersion: 2
+      Hash: f2cc7b5fbba522728bce09352e4eff29
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Waypoint
+  - hash:
+      serializedVersion: 2
       Hash: bca99023bea9cf928377cec7f5f4fe67
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Locomotion.Climbing
@@ -1367,6 +1378,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b5007673bbbdb9d12597a1d8201370f5
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: f039cc729b88b42655497bc708f4857c
@@ -1997,24 +2014,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard.KeyFunctions
     className: LayoutFunction
-  - hash:
-      serializedVersion: 2
-      Hash: 3f5b22ff0bcc11ca2b63023c180b7382
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WaypointManager
-  - hash:
-      serializedVersion: 2
-      Hash: f2cc7b5fbba522728bce09352e4eff29
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Waypoint
-  - hash:
-      serializedVersion: 2
-      Hash: 0317a4766c8fc8c840d901163602020c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ShootTarget
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity

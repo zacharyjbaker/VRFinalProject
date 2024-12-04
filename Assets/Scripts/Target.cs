@@ -19,6 +19,10 @@ public class Target : MonoBehaviour
     private GameObject BulletTemplate;
     public float shootPower = 500f;
     public float targetTime = 3f;
+    public GameObject[] path;
+    public int activeWaypoint = 0;
+
+    Vector3 forwardDir;
 
     public AudioSource audioSource;
 
@@ -58,11 +62,25 @@ public class Target : MonoBehaviour
     // Update is called once per frame  
     void Update()
     {
+        var step = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, path[activeWaypoint].transform.position, step);
+
+        //forwardDir = GetComponent<Rigidbody>().velocity;
+        //forwardDir = GetComponent<Rigidbody>().velocity.normalized;
+        transform.LookAt(path[activeWaypoint].transform.position);
+
+        leftLeg.transform.rotation = Quaternion.Lerp(defaultLeftQuat, forwardLeftQuat, Mathf.PingPong(Time.time,1));
+        rightLeg.transform.rotation = Quaternion.Lerp(defaultRightQuat, forwardRightQuat, Mathf.PingPong(Time.time,1));
+
+        if (Vector3.Distance(transform.position, path[activeWaypoint].transform.position) < 0.3f) {
+            activeWaypoint+=1;
+        }
         //Debug.Log(Time.timeScale);
         if (rida == false) {
             StickToGround();
         }
-        var step = speed * Time.deltaTime;
+    
+        /*
         if (playerTarget != null) {
 		    transform.LookAt(playerTarget.transform.position);
             if (shoota == true) {
@@ -80,10 +98,10 @@ public class Target : MonoBehaviour
                 leftLeg.transform.rotation = Quaternion.Lerp(defaultLeftQuat, forwardLeftQuat, Mathf.PingPong(Time.time,1));
                 rightLeg.transform.rotation = Quaternion.Lerp(defaultRightQuat, forwardRightQuat, Mathf.PingPong(Time.time,1));
             }
-        }
+        }*/
 
         targetTime -= Time.deltaTime;
-
+        /*
         if (targetTime <= 0.1f)
         {
             if (shoota == true){
@@ -97,7 +115,7 @@ public class Target : MonoBehaviour
                 strafeDir = -transform.right;
             }
             targetTime = 3f;
-        }
+        }*/
     }
 
         /*
