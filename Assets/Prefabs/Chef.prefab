@@ -3150,7 +3150,7 @@ GameObject:
   - component: {fileID: 4120526289019638860}
   m_Layer: 0
   m_Name: Chef
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3211,7 +3211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16789652cee6749cfa5e3e66ed72810a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 1
   target: []
   focus: 0
   playerTarget: {fileID: 0}
@@ -3219,13 +3219,15 @@ MonoBehaviour:
   BulletTemplate: {fileID: 0}
   shootPower: 500
   targetTime: 3
+  path: []
+  activeWaypoint: 0
   audioSource: {fileID: 0}
   shoota: 0
   stabba: 1
   pulla: 0
   rida: 0
-  leftLeg: {fileID: 0}
-  rightLeg: {fileID: 0}
+  leftLeg: {fileID: 8722913811853068912}
+  rightLeg: {fileID: 3456451419154885568}
 --- !u!54 &149705513649993096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3234,7 +3236,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8379966631325780260}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3248,11 +3250,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &445235732379000087
 CapsuleCollider:
   m_ObjectHideFlags: 0

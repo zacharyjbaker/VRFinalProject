@@ -13,16 +13,21 @@ public class SpellBook : MonoBehaviour
 
     [SerializeField] private GameObject player;
     [SerializeField] private LayerMask teleportMask;
-    [SerializeField] private InputActionReference teleportButtonPress;
+    [SerializeField] private InputActionReference spellButtonPress;
     [SerializeField] private InputActionReference restartButtonPress;
+    [SerializeField] private InputActionReference teleportButtonPress;
     [SerializeField] private VideoClip[] spellVids;
+    [SerializeField] private GameObject[] towers;
 
     [SerializeField] private VideoPlayer vidPlayer;
 
     [SerializeField] private GameObject[] MagicWaypoints;
+    private int currentTower = 0;
+
 
     void Start() {
-        teleportButtonPress.action.performed += ChangeSpell;
+        spellButtonPress.action.performed += ChangeSpell;
+        teleportButtonPress.action.performed += MoveToTower;
         restartButtonPress.action.performed += Restart;
         GameMode = "Trace";
         vidPlayer.clip = spellVids[0];  
@@ -42,6 +47,12 @@ public class SpellBook : MonoBehaviour
             player.transform.position = hit.point + new Vector3(0,0.4f,0);
         }
     }
+
+    void MoveToTower(InputAction.CallbackContext __) {
+		if (currentTower == 0) {currentTower = 1;}
+		else if (currentTower == 1) {currentTower = 0;}
+		player.transform.position = towers[currentTower].transform.position;
+	}
 
     void Restart(InputAction.CallbackContext __) {
         string currentSceneName = SceneManager.GetActiveScene().name;

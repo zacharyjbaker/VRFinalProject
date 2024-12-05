@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Cache;
+
+//using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,12 +11,23 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private GameObject MagicParticles1;
     [SerializeField] private GameObject MagicParticles2;
     [SerializeField] private GameObject BulletTemplate;
+
+    [SerializeField] private GameObject StaffMagic1;
+
+    [SerializeField] private GameObject ProjMagic1;
+
+    [SerializeField] private GameObject ChargedEmitter;
+
+    [SerializeField] private GameObject HitPlane;
+
     public GameObject origin;
     public GameObject fireOrigin;
 
     public float shootPower;
 
     public InputActionReference trigger;
+
+    public InputActionReference cast;
 
     public AudioSource audioSource;
     public AudioClip magicSound;
@@ -23,8 +37,18 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private float distanceSum = 0f;
     [SerializeField] private int segmentCount = 0;
 
+    private int magicType = 1;
+    
+    private bool projectileCharged = false;
+
+    private int charges = 5;
+
     Vector3 newPoint;
     Vector3 previousPoint = new Vector3(0,0,0);
+
+    void Start() {
+        cast.action.performed += CastSpell;
+    }
 
     void Update()
     {
@@ -32,10 +56,12 @@ public class PlayerShoot : MonoBehaviour
         if (trigger.action.IsPressed()) {
             if (SpellBook.GameMode == "Trace")
             {
+                magicType = 1;
                 Trace();
             }
             else if (SpellBook.GameMode == "Swipe")
             {
+                magicType = 2;
                 newPoint = Swipe(previousPoint);
                 if (segmentCount < 2) {
                     if (segmentCount == 0 & newPoint.y > previousPoint.y) {
@@ -83,7 +109,37 @@ public class PlayerShoot : MonoBehaviour
             }
             else 
             {
+                magicType = 3;
                 Shoot();
+            }
+        }
+    }
+
+    public void Charge() {
+        charges = 5;
+        projectileCharged = true;
+        ChargedEmitter.SetActive(true);
+        //SpellBook.MagicWaypoints[1].SetActive(false);
+        //SpellBook.MagicWaypoints[0].SetActive(false);
+    }
+
+    private void CastSpell(InputAction.CallbackContext __) {
+        Debug.Log("Cast");
+        if (projectileCharged == true) {
+            Debug.Log("Successful Cast");
+            if (magicType == 1) {
+                charges -= 1;
+                if (charges == 0) {
+                    projectileCharged = false;
+                    ChargedEmitter.SetActive(false);
+                }
+                GameObject projectile = Instantiate(ProjMagic1, fireOrigin.transform.position += fireOrigin.transform.forward * 1.5f , fireOrigin.transform.rotation);
+                projectile.GetComponent<Rigidbody>().AddForce(fireOrigin.transform.forward * shootPower * 2.5f);
+                //SpellBook.MagicWaypoints[1].SetActive(false);
+                //SpellBook.MagicWaypoints[0].SetActive(true);
+            }
+            if (!audioSource.isPlaying) {
+                audioSource.PlayOneShot(magicSound);
             }
         }
     }
@@ -91,6 +147,7 @@ public class PlayerShoot : MonoBehaviour
     void Trace() {
         RaycastHit hit;
         if (Physics.Raycast(origin.transform.position, origin.transform.forward, out hit)){
+            Debug.Log(hit.transform.name);
             if (hit.transform.name == "HitPlane"){
                 GameObject magic = Instantiate(MagicParticles1, hit.point, transform.rotation);
                 //newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootPower);

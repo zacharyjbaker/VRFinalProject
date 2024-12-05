@@ -7,6 +7,8 @@ public class WaypointManager : MonoBehaviour
 
     [SerializeField] public GameObject[] waypoints;
     [SerializeField] public AudioClip[] audioClips;
+
+    [SerializeField] private GameObject player;
     public AudioSource audioSource;
     public int magicCount = 1;
     
@@ -19,10 +21,11 @@ public class WaypointManager : MonoBehaviour
                 Debug.Log("W" + magicCount);
                 audioSource.PlayOneShot(audioClips[magicCount-1]);
                 waypoint.SetActive(false);
-                if (magicCount == 6) {
-                    magicCount = 1;
-                }
                 magicCount++;
+                if (magicCount == 7) {
+                    magicCount = 1;
+                    player.GetComponent<PlayerShoot>().Charge();
+                }
             }
             else {
                 audioSource.PlayOneShot(audioClips[6]);

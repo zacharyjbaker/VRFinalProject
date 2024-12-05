@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - Player
     - PlayerShoot
     - ShootTarget
+    - Spawner
     - SpellBook
     - Target
     - TimeModulate
@@ -29,6 +30,9 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     Unity.XR.CoreUtils.dll:
     - Unity.XR.CoreUtils.XROrigin
@@ -90,12 +94,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile
     - UnityEngine.XR.OpenXR.OpenXRLoader
     - UnityEngine.XR.OpenXR.OpenXRSettings
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -189,15 +187,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18798}
+      Script: {instanceID: 18804}
     - Class: 114
-      Script: {instanceID: 18942}
+      Script: {instanceID: 18948}
     - Class: 114
-      Script: {instanceID: 20598}
+      Script: {instanceID: 20604}
     - Class: 114
-      Script: {instanceID: 21526}
+      Script: {instanceID: 21532}
     - Class: 114
-      Script: {instanceID: 22524}
+      Script: {instanceID: 22530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -252,81 +250,83 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 498}
+      Script: {instanceID: 494}
     - Class: 114
-      Script: {instanceID: 16718}
+      Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16768}
+      Script: {instanceID: 16772}
     - Class: 114
-      Script: {instanceID: 16796}
+      Script: {instanceID: 16800}
     - Class: 114
-      Script: {instanceID: 17026}
+      Script: {instanceID: 17030}
     - Class: 114
-      Script: {instanceID: 17234}
+      Script: {instanceID: 17238}
     - Class: 114
-      Script: {instanceID: 17318}
+      Script: {instanceID: 17322}
     - Class: 114
-      Script: {instanceID: 17470}
+      Script: {instanceID: 17474}
     - Class: 114
-      Script: {instanceID: 17610}
+      Script: {instanceID: 17614}
     - Class: 114
-      Script: {instanceID: 17942}
+      Script: {instanceID: 17624}
     - Class: 114
-      Script: {instanceID: 17954}
+      Script: {instanceID: 17948}
     - Class: 114
-      Script: {instanceID: 18232}
+      Script: {instanceID: 17960}
     - Class: 114
-      Script: {instanceID: 18270}
+      Script: {instanceID: 18238}
     - Class: 114
-      Script: {instanceID: 18382}
+      Script: {instanceID: 18276}
     - Class: 114
-      Script: {instanceID: 18450}
+      Script: {instanceID: 18388}
     - Class: 114
-      Script: {instanceID: 18620}
+      Script: {instanceID: 18456}
     - Class: 114
-      Script: {instanceID: 18662}
+      Script: {instanceID: 18626}
     - Class: 114
-      Script: {instanceID: 18694}
+      Script: {instanceID: 18668}
     - Class: 114
-      Script: {instanceID: 18796}
+      Script: {instanceID: 18700}
     - Class: 114
-      Script: {instanceID: 18798}
+      Script: {instanceID: 18802}
     - Class: 114
-      Script: {instanceID: 18860}
+      Script: {instanceID: 18804}
     - Class: 114
-      Script: {instanceID: 18942}
+      Script: {instanceID: 18866}
     - Class: 114
-      Script: {instanceID: 19172}
+      Script: {instanceID: 18948}
     - Class: 114
-      Script: {instanceID: 19428}
+      Script: {instanceID: 19178}
     - Class: 114
-      Script: {instanceID: 20098}
+      Script: {instanceID: 19434}
     - Class: 114
-      Script: {instanceID: 20158}
+      Script: {instanceID: 20104}
     - Class: 114
-      Script: {instanceID: 20240}
+      Script: {instanceID: 20164}
     - Class: 114
-      Script: {instanceID: 20408}
+      Script: {instanceID: 20246}
     - Class: 114
-      Script: {instanceID: 20598}
+      Script: {instanceID: 20414}
     - Class: 114
-      Script: {instanceID: 21096}
+      Script: {instanceID: 20604}
     - Class: 114
-      Script: {instanceID: 21526}
+      Script: {instanceID: 21102}
     - Class: 114
-      Script: {instanceID: 21566}
+      Script: {instanceID: 21532}
     - Class: 114
-      Script: {instanceID: 21728}
+      Script: {instanceID: 21572}
     - Class: 114
-      Script: {instanceID: 21882}
+      Script: {instanceID: 21734}
     - Class: 114
-      Script: {instanceID: 22418}
+      Script: {instanceID: 21888}
     - Class: 114
-      Script: {instanceID: 22430}
+      Script: {instanceID: 22424}
     - Class: 114
-      Script: {instanceID: 22492}
+      Script: {instanceID: 22436}
     - Class: 114
-      Script: {instanceID: 22704}
+      Script: {instanceID: 22498}
+    - Class: 114
+      Script: {instanceID: 22710}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -462,7 +462,7 @@ ScriptsOnlyBuild:
     className: OculusSettings
   - hash:
       serializedVersion: 2
-      Hash: 50325189ded9933d12592ef638acd44d
+      Hash: ea40f2efd93ed76d74b1e47ebf17eb4a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SpellBook
@@ -576,7 +576,7 @@ ScriptsOnlyBuild:
     className: OpenXRSettings
   - hash:
       serializedVersion: 2
-      Hash: 570941043813777b6706ac8070561fb3
+      Hash: 8da321ef0b8cc24619390e48b4f0730c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Player
@@ -624,7 +624,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 3f5b22ff0bcc11ca2b63023c180b7382
+      Hash: 3502f34df413ff292f55e50bde822fc5
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: WaypointManager
@@ -664,6 +664,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DebugTMP
+  - hash:
+      serializedVersion: 2
+      Hash: 7ee396d540930f0de2247694f8f3b1b6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Spawner
   - hash:
       serializedVersion: 2
       Hash: fceadaba8b09f8882b709102397b29f4
@@ -984,7 +990,7 @@ ScriptsOnlyBuild:
     className: MetaQuestTouchProControllerProfile
   - hash:
       serializedVersion: 2
-      Hash: 8488b95770b77ce23411bb588dba9242
+      Hash: 0fe1badd7bd40856308de47c10e05868
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerShoot
@@ -1878,7 +1884,7 @@ ScriptsOnlyBuild:
     className: TrackedPoseDriver
   - hash:
       serializedVersion: 2
-      Hash: 3aa6f501a278ac25ba28a839558d9d7c
+      Hash: 14ea81092ae9481da5404c5cfddc0106
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Target

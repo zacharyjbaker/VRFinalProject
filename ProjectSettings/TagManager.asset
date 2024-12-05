@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Enemy
   - Magic
+  - Base
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - Enemy
   - Player
-  - 
+  - Projectiles
   - 
   - 
   - 

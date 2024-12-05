@@ -67,12 +67,15 @@ public class Target : MonoBehaviour
 
         //forwardDir = GetComponent<Rigidbody>().velocity;
         //forwardDir = GetComponent<Rigidbody>().velocity.normalized;
-        transform.LookAt(path[activeWaypoint].transform.position);
+        //transform.LookAt(path[activeWaypoint].transform.position);
+
+        Quaternion lookOnLook = Quaternion.LookRotation(path[activeWaypoint].transform.position - transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookOnLook, Time.deltaTime);
 
         leftLeg.transform.rotation = Quaternion.Lerp(defaultLeftQuat, forwardLeftQuat, Mathf.PingPong(Time.time,1));
         rightLeg.transform.rotation = Quaternion.Lerp(defaultRightQuat, forwardRightQuat, Mathf.PingPong(Time.time,1));
 
-        if (Vector3.Distance(transform.position, path[activeWaypoint].transform.position) < 0.3f) {
+        if (Vector3.Distance(transform.position, path[activeWaypoint].transform.position) < 1f) {
             activeWaypoint+=1;
         }
         //Debug.Log(Time.timeScale);
@@ -150,6 +153,9 @@ public class Target : MonoBehaviour
         }
         else if (other.tag == "Player"){
             Destroy(other);
+        }
+        else if (other.tag == "Base"){
+            Destroy(gameObject);
         }
     }
 

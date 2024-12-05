@@ -2353,7 +2353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16789652cee6749cfa5e3e66ed72810a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.75
   target:
   - {fileID: 0}
   - {fileID: 0}
@@ -2364,6 +2364,8 @@ MonoBehaviour:
   BulletTemplate: {fileID: 5602302699970504460, guid: 3ea87d25477d94a2b8c7858d7f584230, type: 3}
   shootPower: 700
   targetTime: 2
+  path: []
+  activeWaypoint: 0
   audioSource: {fileID: 2626047303205261017}
   shoota: 0
   stabba: 1

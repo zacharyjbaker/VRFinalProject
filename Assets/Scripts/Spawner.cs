@@ -25,6 +25,7 @@ public class Spawner : MonoBehaviour
         {
             GameObject enemy = Instantiate(EnemyTypes[0], transform.position, transform.rotation);
             enemy.GetComponent<Target>().path = Waypoints;
+            enemy.transform.forward = gameObject.transform.forward;
             targetTime = 10f;
         }
     }

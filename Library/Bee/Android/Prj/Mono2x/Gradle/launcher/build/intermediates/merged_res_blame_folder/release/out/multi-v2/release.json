@@ -4,7 +4,7 @@
             "outputFile": "com.DefaultCompany.VRTestProj.launcher-merged_res-5:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values/values.xml",
+                    "source": "/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,11,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/strings.xml",
+                    "source": "/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "2,2",
@@ -45,7 +45,7 @@
             "outputFile": "com.DefaultCompany.VRTestProj.launcher-merged_res-5:/values-v21_values-v21.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v21/values-v21.xml",
+                    "source": "/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -61,7 +61,7 @@
             "outputFile": "com.DefaultCompany.VRTestProj.launcher-merged_res-5:/values-v31_values-v31.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v31/values-v31.xml",
+                    "source": "/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v31/values-v31.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -77,7 +77,7 @@
             "outputFile": "com.DefaultCompany.VRTestProj.launcher-merged_res-5:/values-v30_values-v30.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v30/values-v30.xml",
+                    "source": "/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v30/values-v30.xml",
                     "from": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
@@ -92,7 +92,7 @@
             "outputFile": "com.DefaultCompany.VRTestProj.launcher-merged_res-5:/values-v28_values-v28.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v28/values-v28.xml",
+                    "source": "/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

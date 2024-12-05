@@ -1,9 +1,9 @@
 <libraries>
   <library
-      name="/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle@@:unityLibrary::release"
-      jars="/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/4d1b3063b4d7a7fe7b2ac7b15fe8fca1/transformed/out/jars/classes.jar:/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/4d1b3063b4d7a7fe7b2ac7b15fe8fca1/transformed/out/jars/libs/R.jar:/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/4d1b3063b4d7a7fe7b2ac7b15fe8fca1/transformed/out/jars/libs/unity-classes.jar"
+      name="/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle@@:unityLibrary::release"
+      jars="/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/77583a283e4886fe493aa46053e05f74/transformed/out/jars/classes.jar:/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/77583a283e4886fe493aa46053e05f74/transformed/out/jars/libs/R.jar:/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/77583a283e4886fe493aa46053e05f74/transformed/out/jars/libs/unity-classes.jar"
       resolved="Gradle:unityLibrary:unspecified"
-      folder="/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/4d1b3063b4d7a7fe7b2ac7b15fe8fca1/transformed/out"
+      folder="/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/77583a283e4886fe493aa46053e05f74/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -13,9 +13,9 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="__local_aars__:/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar:unspecified@jar"
-      jars="/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar"
-      resolved="__local_aars__:/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar:unspecified"/>
+      name="__local_aars__:/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar:unspecified@jar"
+      jars="/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar"
+      resolved="__local_aars__:/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar:unspecified"/>
   <library
       name=":OVRPlugin:@aar"
       jars="/Users/zacharybaker/.gradle/caches/transforms-3/e1d14f80a71d3bacb3f249a726f7e39f/transformed/jetified-OVRPlugin/jars/classes.jar"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle@@:unityLibrary:xrmanifest.androidlib::release"
-      jars="/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/b4a0e55991f5983e4414c21af99284f9/transformed/out/jars/classes.jar:/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/b4a0e55991f5983e4414c21af99284f9/transformed/out/jars/libs/R.jar"
+      name="/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle@@:unityLibrary:xrmanifest.androidlib::release"
+      jars="/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/6758979dc11225b96e1e39eb870dc5c0/transformed/out/jars/classes.jar:/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/6758979dc11225b96e1e39eb870dc5c0/transformed/out/jars/libs/R.jar"
       resolved="Gradle.unityLibrary:xrmanifest.androidlib:unspecified"
-      folder="/Users/zacharybaker/InteractionResearch/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/b4a0e55991f5983e4414c21af99284f9/transformed/out"
+      folder="/Users/zacharybaker/XRArcade/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/6758979dc11225b96e1e39eb870dc5c0/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
