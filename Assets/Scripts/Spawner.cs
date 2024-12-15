@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        targetTime = Random.Range(3.0f, 10.0f);
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour
             GameObject enemy = Instantiate(EnemyTypes[0], transform.position, transform.rotation);
             enemy.GetComponent<Target>().path = Waypoints;
             enemy.transform.forward = gameObject.transform.forward;
-            targetTime = 10f;
+            targetTime = Random.Range(8.0f, 20.0f);
         }
     }
 }

@@ -11,6 +11,7 @@ public class WaypointManager : MonoBehaviour
     [SerializeField] private GameObject player;
     public AudioSource audioSource;
     public int magicCount = 1;
+    public int fireChargeCount = 0;
     
 
     // Update is called once per frame
@@ -25,9 +26,15 @@ public class WaypointManager : MonoBehaviour
                 if (magicCount == 7) {
                     magicCount = 1;
                     player.GetComponent<PlayerShoot>().Charge();
+                    if (player.GetComponent<PlayerShoot>().magicType == 2 && fireChargeCount < 5) {
+                        fireChargeCount++;
+                        foreach (GameObject wp in waypoints){
+                            wp.SetActive(true);
+                        }
+                    }
                 }
             }
-            else {
+            else if (player.GetComponent<PlayerShoot>().magicType == 10) {
                 audioSource.PlayOneShot(audioClips[6]);
                 Debug.Log("Wrong Order");
                 magicCount = 1;

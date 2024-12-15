@@ -1,0 +1,15 @@
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Assembly-CSharp.deps.json
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Assembly-CSharp.pdb
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.pdb
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.pdb
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.pdb
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.pdb
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.pdb
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/Assembly-CSharp.csproj.AssemblyReference.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/Assembly-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/Assembly-CSharp.csproj.CoreCompileInputs.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/Assembly-CSharp.sourcelink.json
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/Assembly.44154EF1.Up2Date
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/Assembly-CSharp.dll
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/Assembly-CSharp.pdb

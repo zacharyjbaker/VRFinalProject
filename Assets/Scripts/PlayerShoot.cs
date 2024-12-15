@@ -5,20 +5,31 @@ using System.Net.Cache;
 //using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject MagicParticles1;
     [SerializeField] private GameObject MagicParticles2;
+    [SerializeField] private GameObject MagicParticles3;
+    [SerializeField] private GameObject MagicParticles4;
+    [SerializeField] private GameObject HitPlane;
+    [SerializeField] public GameObject Board;
+    private GameObject MagicTraceType;
     [SerializeField] private GameObject BulletTemplate;
+    [SerializeField] private GameObject SummonCircle;
 
-    [SerializeField] private GameObject StaffMagic1;
+    [SerializeField] public GameObject WPManager;
+    [SerializeField] public GameObject WPManager2;
+
+    [SerializeField] public GameObject StaffMagic1;
+    [SerializeField] public GameObject StaffMagic2;
+    [SerializeField] public GameObject StaffMagic3;
 
     [SerializeField] private GameObject ProjMagic1;
+    [SerializeField] public GameObject[] StaffEmitters;
+    public int ChargedEmitter;
 
-    [SerializeField] private GameObject ChargedEmitter;
-
-    [SerializeField] private GameObject HitPlane;
 
     public GameObject origin;
     public GameObject fireOrigin;
@@ -26,8 +37,9 @@ public class PlayerShoot : MonoBehaviour
     public float shootPower;
 
     public InputActionReference trigger;
-
+    public InputActionReference restart;
     public InputActionReference cast;
+    public InputActionReference restartSpell;
 
     public AudioSource audioSource;
     public AudioClip magicSound;
@@ -37,9 +49,9 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private float distanceSum = 0f;
     [SerializeField] private int segmentCount = 0;
 
-    private int magicType = 1;
+    public int magicType = 1;
     
-    private bool projectileCharged = false;
+    public bool projectileCharged = false;
 
     private int charges = 5;
 
@@ -48,20 +60,46 @@ public class PlayerShoot : MonoBehaviour
 
     void Start() {
         cast.action.performed += CastSpell;
-    }
+        restart.action.performed += Restart;
+        restartSpell.action.performed += RestartSpell;
+        
+        ChargedEmitter = 0;
+    }   
 
     void Update()
     {
         Debug.DrawRay(transform.position, transform.forward, Color.magenta);
+        if (cast.action.IsPressed()) {
+            
+            if (magicType == 2 && projectileCharged){
+                Board.SetActive(false);
+                Shoot();
+                charges -= 1;
+                if (charges <= 0) {
+                    projectileCharged = false;
+                    StaffEmitters[ChargedEmitter].SetActive(false);
+                    StartCoroutine(RechargeWaypoint());
+                }
+            }
+        }
         if (trigger.action.IsPressed()) {
+            
             if (SpellBook.GameMode == "Trace")
             {
                 magicType = 1;
+                MagicTraceType = MagicParticles1;
+                Trace();
+            }
+            else if (SpellBook.GameMode == "Shoot")
+            {
+                magicType = 2;
+                MagicTraceType = MagicParticles2;
                 Trace();
             }
             else if (SpellBook.GameMode == "Swipe")
             {
-                magicType = 2;
+                magicType = 3;
+                MagicTraceType = MagicParticles4;
                 newPoint = Swipe(previousPoint);
                 if (segmentCount < 2) {
                     if (segmentCount == 0 & newPoint.y > previousPoint.y) {
@@ -104,6 +142,8 @@ public class PlayerShoot : MonoBehaviour
                     distanceSum = 0;
                     segmentCount = 0;
                     audioSource.PlayOneShot(audioClips[5]);
+                    Charge();
+
                 }
                 previousPoint = newPoint;
             }
@@ -115,33 +155,108 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
+    IEnumerator RechargeWaypoint() {
+        yield return new WaitForSeconds(1.5f);
+        foreach (GameObject wp in WPManager.GetComponent<WaypointManager>().waypoints){
+            wp.SetActive(true);
+        }
+        WPManager.GetComponent<WaypointManager>().fireChargeCount = 0;
+        foreach (GameObject wp in WPManager2.GetComponent<WaypointManager>().waypoints){
+            wp.SetActive(true);
+        }
+        WPManager2.GetComponent<WaypointManager>().fireChargeCount = 0;
+        Board.SetActive(true);
+    }
+
+    private void Restart(InputAction.CallbackContext __) {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+	    SceneManager.LoadScene(currentSceneName);   
+    }
+
+    private void RestartSpell(InputAction.CallbackContext __) {
+        /*
+        foreach (GameObject wp in WPManager.GetComponent<WaypointManager>().waypoints){
+            wp.SetActive(true);
+        }
+        WPManager.GetComponent<WaypointManager>().fireChargeCount = 0;
+        WPManager.GetComponent<WaypointManager>().magicCount = 0;
+        foreach (GameObject wp in WPManager2.GetComponent<WaypointManager>().waypoints){
+            wp.SetActive(true);
+        }
+        WPManager2.GetComponent<WaypointManager>().fireChargeCount = 0;
+        WPManager2.GetComponent<WaypointManager>().magicCount = 0;
+        projectileCharged = false;
+        StaffEmitters[ChargedEmitter].SetActive(false);
+        Board.SetActive(true);*/
+        Debug.Log("AGGGGH");
+    }
+
     public void Charge() {
-        charges = 5;
+        if (magicType == 1) {
+            charges = 5;
+            ChargedEmitter = 0;
+        }
+        else if (magicType == 2) {
+            charges += 60;
+            ChargedEmitter = 1;
+        }
+        else if (magicType == 3) {
+            charges = 1;
+            ChargedEmitter = 2;
+        }
+
         projectileCharged = true;
-        ChargedEmitter.SetActive(true);
+        StaffEmitters[ChargedEmitter].SetActive(true);
         //SpellBook.MagicWaypoints[1].SetActive(false);
         //SpellBook.MagicWaypoints[0].SetActive(false);
     }
 
     private void CastSpell(InputAction.CallbackContext __) {
         Debug.Log("Cast");
+        
         if (projectileCharged == true) {
+            Board.SetActive(false);
             Debug.Log("Successful Cast");
             if (magicType == 1) {
                 charges -= 1;
-                if (charges == 0) {
-                    projectileCharged = false;
-                    ChargedEmitter.SetActive(false);
-                }
+                
                 GameObject projectile = Instantiate(ProjMagic1, fireOrigin.transform.position += fireOrigin.transform.forward * 1.5f , fireOrigin.transform.rotation);
-                projectile.GetComponent<Rigidbody>().AddForce(fireOrigin.transform.forward * shootPower * 2.5f);
+                projectile.GetComponent<Rigidbody>().AddForce(fireOrigin.transform.forward * shootPower * 5.0f);
                 //SpellBook.MagicWaypoints[1].SetActive(false);
                 //SpellBook.MagicWaypoints[0].SetActive(true);
+                if (!audioSource.isPlaying) {
+                    audioSource.PlayOneShot(magicSound);
+                }
+                if (charges == 0) {
+                    projectileCharged = false;
+                    StaffEmitters[ChargedEmitter].SetActive(false);
+                    StartCoroutine(RechargeWaypoint());
+                }
+                
             }
-            if (!audioSource.isPlaying) {
-                audioSource.PlayOneShot(magicSound);
+            
+            else if (magicType == 3) {
+                charges -= 1;
+                if (charges == 0) {
+                    projectileCharged = false;
+                    StaffEmitters[ChargedEmitter].SetActive(false);
+                }
+                
+                RaycastHit hit;
+                if (Physics.Raycast(origin.transform.position, origin.transform.forward, out hit)){
+                    Debug.Log(hit.transform.name);
+                    //GameObject projectile = Instantiate(MagicParticles3, transform.position + transform.forward * 40, origin.transform.rotation);
+                    Instantiate(SummonCircle, hit.point + new Vector3(0f, 0f, 0f), transform.rotation);
+                    //float distance = Vector3.Distance(origin.transform.position, hit.point);
+                    //newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootPower);
+                    if (!audioSource.isPlaying){
+                        audioSource.PlayOneShot(magicSound);
+                    }
+                } 
+                Board.SetActive(true);
             }
         }
+        
     }
 
     void Trace() {
@@ -149,7 +264,7 @@ public class PlayerShoot : MonoBehaviour
         if (Physics.Raycast(origin.transform.position, origin.transform.forward, out hit)){
             Debug.Log(hit.transform.name);
             if (hit.transform.name == "HitPlane"){
-                GameObject magic = Instantiate(MagicParticles1, hit.point, transform.rotation);
+                GameObject magic = Instantiate(MagicTraceType, hit.point, transform.rotation);
                 //newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootPower);
                 if (!audioSource.isPlaying){
                     audioSource.PlayOneShot(magicSound);
@@ -162,7 +277,7 @@ public class PlayerShoot : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(origin.transform.position, origin.transform.forward, out hit)){
             if (hit.transform.name == "HitPlane"){
-                GameObject magic = Instantiate(MagicParticles2, hit.point, transform.rotation);
+                GameObject magic = Instantiate(MagicTraceType, hit.point, transform.rotation);
                 //newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootPower);
                 if (!audioSource.isPlaying){
                     audioSource.PlayOneShot(magicSound);

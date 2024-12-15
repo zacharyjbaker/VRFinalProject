@@ -1,0 +1,99 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "Assembly-CSharp/1.0.0": {
+        "dependencies": {
+          "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator": "1.0.0",
+          "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard": "1.0.0",
+          "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor": "1.0.0",
+          "Unity.XR.Interaction.Toolkit.Samples.StarterAssets": "1.0.0",
+          "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor": "1.0.0"
+        },
+        "runtime": {
+          "Assembly-CSharp.dll": {}
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/1.0.0": {
+        "runtime": {
+          "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard/1.0.0": {
+        "runtime": {
+          "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/1.0.0": {
+        "dependencies": {
+          "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard": "1.0.0"
+        },
+        "runtime": {
+          "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.StarterAssets/1.0.0": {
+        "runtime": {
+          "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/1.0.0": {
+        "runtime": {
+          "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Assembly-CSharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.StarterAssets/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

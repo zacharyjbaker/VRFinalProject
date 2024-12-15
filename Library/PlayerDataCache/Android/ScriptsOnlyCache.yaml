@@ -10,11 +10,14 @@ ScriptsOnlyBuild:
     - ShootTarget
     - Spawner
     - SpellBook
+    - Summon
+    - SummonCircle
     - Target
     - TimeModulate
     - Waypoint
     - WaypointManager
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.Editor.InputActionEditorWindow
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
@@ -46,6 +49,8 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorHandsUI
     - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorUI
     Unity.XR.Interaction.Toolkit.dll:
+    - UnityEngine.XR.Interaction.Toolkit.ActionBasedContinuousMoveProvider
+    - UnityEngine.XR.Interaction.Toolkit.ActionBasedContinuousTurnProvider
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedController
     - UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager
     - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.Hands.HandExpressionCapture
@@ -327,6 +332,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 22498}
     - Class: 114
       Script: {instanceID: 22710}
+    - Class: 114
+      Script: {instanceID: 87514}
+    - Class: 114
+      Script: {instanceID: 272418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -462,7 +471,7 @@ ScriptsOnlyBuild:
     className: OculusSettings
   - hash:
       serializedVersion: 2
-      Hash: ea40f2efd93ed76d74b1e47ebf17eb4a
+      Hash: 59d3bef2623c884fc1a4b0f28a970c40
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SpellBook
@@ -624,7 +633,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 3502f34df413ff292f55e50bde822fc5
+      Hash: b88556e49c4224103a56b6b20f57e3c2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: WaypointManager
@@ -990,7 +999,7 @@ ScriptsOnlyBuild:
     className: MetaQuestTouchProControllerProfile
   - hash:
       serializedVersion: 2
-      Hash: 0fe1badd7bd40856308de47c10e05868
+      Hash: 0ab372ff197cc158be04755606cc666b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerShoot
@@ -1884,7 +1893,7 @@ ScriptsOnlyBuild:
     className: TrackedPoseDriver
   - hash:
       serializedVersion: 2
-      Hash: 14ea81092ae9481da5404c5cfddc0106
+      Hash: 1ef95e5e3c52d89eede79aa30102dcbe
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Target
@@ -2020,6 +2029,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard.KeyFunctions
     className: LayoutFunction
+  - hash:
+      serializedVersion: 2
+      Hash: cf2a9a8174acfa8244eca6f24c4938e2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Summon
+  - hash:
+      serializedVersion: 2
+      Hash: 0f20a7f41357ff030c9df3b916c172b5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SummonCircle
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity

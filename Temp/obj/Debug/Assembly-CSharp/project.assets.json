@@ -1,0 +1,168 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.dll": {}
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.dll": {}
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.dll": {}
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.StarterAssets/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll": {}
+        }
+      },
+      "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/1.0.0": {
+      "type": "project",
+      "path": "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj",
+      "msbuildProject": "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj"
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard/1.0.0": {
+      "type": "project",
+      "path": "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.csproj",
+      "msbuildProject": "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.csproj"
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj",
+      "msbuildProject": "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj"
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.StarterAssets/1.0.0": {
+      "type": "project",
+      "path": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
+      "msbuildProject": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj"
+    },
+    "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj",
+      "msbuildProject": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator >= 1.0.0",
+      "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard >= 1.0.0",
+      "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor >= 1.0.0",
+      "Unity.XR.Interaction.Toolkit.Samples.StarterAssets >= 1.0.0",
+      "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/zacharybaker/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/zacharybaker/XRArcade/Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "/Users/zacharybaker/XRArcade/Assembly-CSharp.csproj",
+      "packagesPath": "/Users/zacharybaker/.nuget/packages/",
+      "outputPath": "/Users/zacharybaker/XRArcade/Temp/obj/Debug/Assembly-CSharp/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/zacharybaker/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj": {
+              "projectPath": "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj"
+            },
+            "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.csproj": {
+              "projectPath": "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.csproj"
+            },
+            "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj": {
+              "projectPath": "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj"
+            },
+            "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
+              "projectPath": "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj"
+            },
+            "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj": {
+              "projectPath": "/Users/zacharybaker/XRArcade/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

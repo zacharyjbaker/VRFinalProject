@@ -70,12 +70,14 @@
     <Compile Include="Assets/Scripts/LogOnHit.cs" />
     <Compile Include="Assets/Scripts/Spawner.cs" />
     <Compile Include="Assets/Scripts/Magic.cs" />
+    <Compile Include="Assets/Summon.cs" />
     <Compile Include="Assets/Scripts/WaypointManager.cs" />
     <Compile Include="Assets/Scripts/DebugTMP.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/TimeModulate.cs" />
     <Compile Include="Assets/Scripts/Target.cs" />
+    <Compile Include="Assets/SummonCircle.cs" />
     <Compile Include="Assets/ShootTarget.cs" />
     <Compile Include="Assets/Scripts/GameStart.cs" />
   </ItemGroup>
@@ -96,9 +98,9 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/PolygonHorrorMansion/Materials/Shaders/SyntyStudios_Ghost.shader" />
+    <None Include="Assets/AssetPacks/PolygonHorrorMansion/Materials/Shaders/SyntyStudios_Ghost.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/PolygonHorrorMansion/Materials/Shaders/SyntyStudios_Grunge.shader" />
+    <None Include="Assets/AssetPacks/PolygonHorrorMansion/Materials/Shaders/SyntyStudios_Grunge.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />

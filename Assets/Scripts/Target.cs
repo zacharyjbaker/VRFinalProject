@@ -13,6 +13,9 @@ public class Target : MonoBehaviour
     [SerializeField] private int focus = 0;
     [SerializeField] private GameObject playerTarget;
 
+    [SerializeField] private GameObject shield1;
+    [SerializeField] private GameObject shield2;
+
     [SerializeField] private int health = 1;
 
     [SerializeField]
@@ -30,6 +33,8 @@ public class Target : MonoBehaviour
     [SerializeField] private bool stabba;
     [SerializeField] private bool pulla;
     [SerializeField] private bool rida;
+    [SerializeField] private bool knight;
+
 
     [SerializeField] private GameObject leftLeg;
     [SerializeField] private GameObject rightLeg;
@@ -141,18 +146,26 @@ public class Target : MonoBehaviour
         }*/
 
     private void OnTriggerEnter(Collider other) {
-        
+        Debug.Log("damagetoenemy");
         if (other.tag == "Bullet"){
+            Destroy(other.gameObject);
             if (health <= 1) {
-                Destroy(other);
                 Destroy(gameObject);
             }
             else {
                 health = health - 1;
+                if (knight) {
+                    if (health == 2) {
+                        shield1.SetActive(false);
+                    }
+                    else if (health == 1) {
+                        shield2.SetActive(false);
+                    } 
+                }
             }
         }
         else if (other.tag == "Player"){
-            Destroy(other);
+            Destroy(other.gameObject);
         }
         else if (other.tag == "Base"){
             Destroy(gameObject);

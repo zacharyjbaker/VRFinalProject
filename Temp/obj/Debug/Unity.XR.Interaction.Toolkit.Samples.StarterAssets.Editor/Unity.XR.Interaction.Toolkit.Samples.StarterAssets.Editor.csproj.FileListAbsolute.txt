@@ -1,0 +1,9 @@
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.deps.json
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.dll
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.pdb
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj.AssemblyReference.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj.CoreCompileInputs.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.sourcelink.json
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.dll
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.pdb

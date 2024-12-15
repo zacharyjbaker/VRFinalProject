@@ -1,0 +1,9 @@
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.deps.json
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.dll
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.pdb
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj.AssemblyReference.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj.CoreCompileInputs.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.sourcelink.json
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.dll
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.pdb

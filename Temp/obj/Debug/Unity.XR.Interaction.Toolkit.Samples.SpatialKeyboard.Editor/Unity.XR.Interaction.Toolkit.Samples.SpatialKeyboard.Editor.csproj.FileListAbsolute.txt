@@ -1,0 +1,11 @@
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.deps.json
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.dll
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.pdb
+/Users/zacharybaker/XRArcade/Temp/bin/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.pdb
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj.AssemblyReference.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj.CoreCompileInputs.cache
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.sourcelink.json
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/Unity.XR.BEB83421.Up2Date
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.dll
+/Users/zacharybaker/XRArcade/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor/Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.pdb
